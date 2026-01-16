@@ -1,0 +1,17 @@
+{
+  "name": "hono-vite-monorepo-starter",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "db:push": "pnpm --filter server db:push",
+    "db:gen": "pnpm --filter server db:gen",
+    "db:mig": "pnpm --filter server db:mig",
+    "db:studio": "pnpm --filter server db:studio"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@7.2.5"
+    }
+  }
+}
